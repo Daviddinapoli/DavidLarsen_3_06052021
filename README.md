@@ -7,4 +7,6 @@ In this project it is recommended to start using Sass to learn how to simplify w
 
 Here below you can find the Mock-Up for the homepage and one restaurant menu as an example.
 
-Homepage Menu - La palette du goût
+![Homepage](https://user-images.githubusercontent.com/82090477/122244147-8d04af00-cebc-11eb-997a-3135e528af66.png)
+![Menu - La palette du goût](https://user-images.githubusercontent.com/82090477/122244169-91c96300-cebc-11eb-9602-993ea32f12de.png)
+
