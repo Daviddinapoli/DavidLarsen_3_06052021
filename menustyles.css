@@ -1,0 +1,461 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900");
+
+.card .cardchecker .fas a check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.cardchecking,
+.fas fa-check {
+  color: #99e2d0;
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50rem;
+
+}
+body {
+  width: 100%;
+  margin: 0;
+}
+
+.header {
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.fas {
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+.fas:hover:before {
+  transition: color 1600ms;
+  color: purple;
+  -webkit-text-stroke-width: 0;
+  position: relative;
+    top: 7px;
+    left: 7px;
+}
+
+.ohmyfoodlogo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 15%;
+}
+
+.returnhome .fa-arrow-left {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  display: inline-block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.returnhome .fa-arrow-left:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+
+.mainheaderimage > img {
+  width: 100%;
+  min-width: 320px;
+  height: 260px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.foodpalettemainwrap {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  min-width: 320px;
+}
+
+.menu {
+  max-width: 1280px;
+  background-color: #f6f6f6;
+  border-radius: 1.5rem 1.5rem 0 0;
+  margin: -3em auto 0;
+  position: relative;
+  z-index: 1;
+}
+.menu .menuheader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 1.5rem 1.5rem 0 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2rem 2rem 1rem 2rem;
+}
+.menu .menutitle {
+  font-family: shrikhand;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.menu .menutitle::first-letter {
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.menucontainer {
+  width: 100%;
+  font-family:Roboto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.submenucontainer {
+  max-width: 100%;
+  overflow: hidden;
+  -webkit-animation: cardAppear 800ms;
+          animation: cardAppear 800ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+.submenucontainer--delay1 {
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+}
+.submenucontainer--delay2 {
+  -webkit-animation-delay: 800ms;
+          animation-delay: 800ms;
+}
+.submenucontainer--delay3 {
+  -webkit-animation-delay: 1200ms;
+          animation-delay: 1200ms;
+}
+
+.entriestitle {
+  padding: 10px 1em;
+  font-size: 1em;
+  color: #848484;
+  text-transform: uppercase;
+}
+.entriestitle > span {
+  border-bottom: solid 2px #99e2d0;
+}
+
+.menucontainers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+}
+
+.card {
+  max-width: calc(100% - 2rem);
+  width: 350px;
+  height: 70px;
+  background-color: #ffffff;
+  cursor: pointer;
+  border-radius: 1rem;
+  padding: 10px;
+  margin: 1rem;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+    
+}
+.card:hover .cardchecker {
+  width: 4rem;
+}
+
+.card:hover .cardprice {
+  right: 70px;
+  transition: 600ms;
+}
+
+.card .cardheader {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-transition: 600ms;
+  transition: 600ms;
+}
+.card .cardtitle,
+.card .carddescription {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -webkit-transition: 600ms;
+  transition: 600ms;
+  margin: 2px;
+}
+.card .cardprice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-weight: 700;
+  padding: 0 0.5rem;
+  -webkit-transition: 600ms;
+  transition: 600ms;
+  display: flex;
+  justify-content:flex-end;
+  position: relative;
+  bottom: 20px;
+  right: 0;
+}
+.card .cardchecker {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #99e2d0;
+  overflow: hidden;
+  width: 0;
+  margin: -1rem -1rem -1rem -1rem;
+  -webkit-transition: 600ms;
+  transition: 600ms;
+  position: absolute;
+  right: 27px;
+  height: 87px;
+  border-radius: 15px;
+}
+.card .cardchecker .fas a check {
+  color: #99e2d0;
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50rem;
+}
+.cardtitle {
+  font-size: large;
+}
+
+.cardstitle {
+  margin-bottom: 2px;
+}
+
+.card:hover .fas fa check {
+  -webkit-animation-name: rotate;
+          animation-name: rotate;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+.orderbutton {
+  display: grid;
+  width: 50%;
+  height: 1.5rem;
+  font-family: roboto;
+  text-decoration: auto;
+  font-size: larger;
+  margin: auto;
+  border: 0;
+  font-size: 1.1rem;
+  color: #ffffff;
+  padding: 1rem 1.5rem;
+  border-radius: 50px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(to bottom, #ff79da, #9356dc);
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 450ms;
+  transition: -webkit-transform 450ms;
+  transition: transform 450ms;
+  transition: transform 450ms, -webkit-transform 450ms;
+  display: flex;
+  justify-content: center;
+  box-shadow: none;
+  bottom: 48px;
+  margin-top: 75px;
+}
+.orderbutton a {
+  background: transparent;
+  box-shadow: transparent;
+  position: relative;
+  bottom: 90px;
+
+}
+
+.cardchecker .fas.fa-check {
+  color: #99e2d0;
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50rem;
+}
+.fa-check::before {
+  position: relative;
+    top: 4px;
+    left: 4px;
+}
+
+.card:hover .fas.fa-check {
+  animation-name: rotate;
+  animation-duration: 0.4s;
+  animation-timing-function: linear;
+}
+.footer {
+  width: 100%;
+  background-color: #353535;
+  color: #ffffff;
+  font-family: roboto;
+  padding: 27px;
+}
+.footer .ohmyfoodfooterlogo {
+  padding: 1em;
+  font-weight: normal;
+}
+.footertitle {
+  font-family: shrikhand;
+  font-weight: 300;
+  position:relative;
+  bottom: 40px;
+}
+
+.footerlist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 1em;
+  color: #ffffff;
+  display: contents;
+}
+
+.footerlist a {
+  color: #ffffff;
+  padding: 10px;
+}
+.footerlist p {
+  margin: 0;
+}
+
+.fas.fa-utensils {
+  color: #fff;
+  padding-right: 20px;
+}
+.fas.fa-handshake {
+  color: #fff;
+  padding-right: 20px;
+}
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	50% {
+		transform: rotate(180deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+
+
+@keyframes cardAppear {
+	0% {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	50% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+@media screen and (min-width: 768px) {
+  .mainwrapper {
+    padding-bottom: 10em;
+  }
+
+  .menu {
+    max-width: 1280px;
+    margin: -3em auto 0;
+  }
+  .menu .mainheaderimage > img {
+    width: 100%;
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .menu .menucontainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}/*# sourceMappingURL=menustyles.css.map */
