@@ -1,0 +1,22 @@
+$font-title: "shrikhand", cursive;
+$font-text: "Roboto";
+
+body {
+    font-family: $font-text;
+}
+h1 {
+    font-family: $font-title;
+}
+h2 {
+    font-weight: bolder;
+}
+
+// Footer //
+
+.ohmyfoodlogofooter {
+    font-family: $font-title;
+}
+
+.menu h2 {
+    font-family: $font-title;
+}

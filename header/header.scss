@@ -1,0 +1,20 @@
+.logoimage {
+    @extend %flex-center;
+    position: relative;
+    width: 100%;
+}
+
+.discoversection {
+    text-align: center;
+    margin: 0 auto;
+    padding: 1em;
+    &> h2 {
+        font-weight: 700;
+        font-size: 24px;
+        padding: 1em 0;
+    }
+    &> p {
+        font-size: 1.1em;
+        padding: 0 0 1.5em;
+    }
+}

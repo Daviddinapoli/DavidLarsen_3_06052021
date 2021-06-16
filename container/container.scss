@@ -1,0 +1,18 @@
+html,body {
+    height: 100vh;
+    position: relative;
+}
+
+.mainwrapper {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1280px;
+    min-width: 320px;
+    animation: main 1000ms 1500ms both;
+}
+
+.restocontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

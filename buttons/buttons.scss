@@ -1,0 +1,80 @@
+.discoverbutton {
+    border: 0;
+    font-size: 1.1rem;
+    color: $color-white;
+    padding: 1rem 1.5rem;
+    border-radius: 50px;
+    background: linear-gradient(to bottom, $color-secondary, $color-primary);
+    @include outline-shadow (rgba(0,0,0,0.2));
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    transform: scale(1);
+    transition: transform 450ms;
+    &:hover {
+        @include outline-shadow (rgba(0, 0, 0, 0.5));
+        background:linear-gradient(to bottom, lighten(#ff79da, 5%), lighten(#9356dc, 5%));
+    }
+}
+
+//Heartbuttons //
+
+.heart {
+    position: relative;
+    height: 2rem;
+    width: 2rem;
+    border: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: transparent 0px solid;
+    transition: 600ms;
+    display: inline-block;
+    &:focus {
+        border: none;
+    }
+}
+
+.btn__heart {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 2rem;
+}
+
+.restoatttitles > .heart {
+    background-color: $color-white;
+}
+
+.far fa heart  {
+    font-size: 2rem;
+}
+
+.btn__noBg {
+    transition: 900ms;
+}
+
+.btn__bg {
+    position: absolute;
+    background: -moz-linear-gradient(to top, #ff79da 0%, #9356dc 100%);
+    background: -webkit-linear-gradient(to top, #ff79da 0%, #9356dc 100%);
+    background: linear-gradient(to top, #ff79da 0% #9356dc 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    --webkit-text-fill-color: transparent;
+    transition: all 900ms ease-in;
+    opacity: 0;
+    width: 0;
+
+}
+
+.heart:hover .btn__bg {
+    opacity: 1;
+    width: 2rem;
+}
+
+.heart:hover .btn__noBg {
+    opacity: 0;
+}

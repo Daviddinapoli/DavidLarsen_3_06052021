@@ -1,0 +1,23 @@
+html, body {
+  height: 100vh;
+  position: relative;
+}
+
+.mainwrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1280px;
+  min-width: 320px;
+  -webkit-animation: main 1000ms 1500ms both;
+          animation: main 1000ms 1500ms both;
+}
+
+.restocontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}/*# sourceMappingURL=container.css.map */
